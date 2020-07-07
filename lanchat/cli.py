@@ -27,6 +27,11 @@ def add_arguments(parser):
                         action='store',
                         default='',
                         help='supply a command to run when alerts are issued')
+    parser.add_argument('-n',
+            '--name',
+            action='store',
+            default='',
+            help='Display username on network')
     return parser
 
 
@@ -36,7 +41,7 @@ def process_args_and_get_node(args):
         version = 'v ' + '.'.join(map(str, __version__))
         print(version)
         return None
-    c = chat.Node(args.color, alert=args.alert)
+    c = chat.Node(args.color, alert=args.alert,name=args.name)
     return c
 
 

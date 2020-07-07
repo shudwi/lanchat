@@ -21,7 +21,7 @@ def stats(txt, color=False):
 
 
 class Node:
-    def __init__(self, color=False, alert=''):
+    def __init__(self, color=False, alert='',name=''):
         self.__client_list_lock = Lock()
         self.alive = True
         self.color = color
@@ -35,7 +35,11 @@ class Node:
         else:
             self.__make_client()
 
-        self.name = config.client_name
+        if(len(name)==0):
+            print("Using System Username")
+            self.name = config.client_name
+        else:
+            self.name = name
 
     def run(self):
         """Run self on provided screen"""

@@ -15,16 +15,9 @@ Things you should know
 - Printing is wierd ( Can someone help me fix it?)
 - No encryption (boo)
 - No protection against DOS
-- Picks your username from the shell (you can change it though)
+- Picks your username from the shell (you can use any username uing --name )
 - It's **pseudo-distributed** . It actually uses a server-client model of communication
   but does so in a manner that everyone just ends up seeing the client.
-
-```
-from lanchat import chat
-n = chat.Node()
-n.name='FooBar'
-n.run()
-```
 
 **Note** : In case the chat does not run check that you are allowed to do UDP broadcast on the network.
 
@@ -46,6 +39,7 @@ $ lanchat
 $ lanchat --version
 $ lanchat -c
 $ lanchat -a 'notify-send LANCHAT_message'
+$ lanchat -n 'username'
 ```
 
 `$ lanchat -c` for the coloured version of the software.
