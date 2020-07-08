@@ -1,10 +1,10 @@
-lanchat
+glanchat
 ====
 
 [![PyPI](https://badge.fury.io/py/lanchat.svg)](http://badge.fury.io/py/lanchat)
 
 A LAN chatting program in python based on goodwill. It does not need a special
-server setup. Install on clients and just run. Only tested on python3.x
+server setup. Install on clients and just run. glanchat is based on lanchat with graphical interface. Only tested on python3.x
 
 
 Things you should know
@@ -26,9 +26,8 @@ Install
 -------
 
 ```
-$ virtualenv -p python3 env
-$ source enb/bin/activate
-$ pip install lanchat
+$ git clone https://github.com/shudwi/glanchat 
+$ python3 -m glanchat
 ```
 
 How to use
