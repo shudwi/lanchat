@@ -15,7 +15,7 @@ Things you should know
 - Printing is wierd ( Can someone help me fix it?)
 - No encryption (boo)
 - No protection against DOS
-- Picks your username from the shell (you can use any username uing --name )
+- Picks your username from the shell (you can use any username using --name )
 - It's **pseudo-distributed** . It actually uses a server-client model of communication
   but does so in a manner that everyone just ends up seeing the client.
 
