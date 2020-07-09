@@ -35,7 +35,7 @@ class Node:
         else:
             self.__make_client()
 
-        if(len(name)==0):
+        if not name:
             print("Using System Username")
             self.name = config.client_name
         else:
